@@ -1,0 +1,135 @@
+/* Our Sydney Story: shared styles. Mobile-first. */
+:root {
+  --cream: #F6F1E8;
+  --cream-deep: #EDE5D7;
+  --ink: #242424;
+  --ink-soft: #4A4744;   /* 8.2:1 on cream */
+  --burgundy: #783D46;   /* 7.3:1 on cream */
+  --rule: #D9CFBF;
+  --serif: "Cormorant Garamond", "Cormorant", Garamond, "Times New Roman", Georgia, serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --measure: 36rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+img, video { max-width: 100%; height: auto; display: block; }
+a { color: var(--burgundy); text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
+a:hover { color: var(--ink); }
+:focus-visible { outline: 2px solid var(--burgundy); outline-offset: 3px; border-radius: 2px; }
+
+.skip-link {
+  position: absolute; left: 1rem; top: -3rem; padding: .5rem 1rem;
+  background: var(--ink); color: var(--cream); z-index: 10; text-decoration: none;
+}
+.skip-link:focus { top: 1rem; color: var(--cream); }
+
+.wrap { width: 100%; max-width: var(--measure); margin: 0 auto; padding: 0 1.5rem; }
+.wrap-wide { max-width: 56rem; }
+
+/* Headings */
+h1, h2, h3, .serif { font-family: var(--serif); font-weight: 500; line-height: 1.15; letter-spacing: .01em; }
+.eyebrow {
+  font-family: var(--sans); font-size: .72rem; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--ink-soft); margin: 0 0 .75rem;
+}
+
+/* Header (homepage) */
+.masthead { text-align: center; padding-top: 4.5rem; padding-bottom: 2.5rem; }
+.masthead h1 {
+  font-size: clamp(2.3rem, 9vw, 3.6rem); margin: 0; letter-spacing: .14em; text-transform: uppercase; font-weight: 400;
+}
+.masthead .subtitle { font-family: var(--serif); font-style: italic; font-size: 1.25rem; color: var(--ink-soft); margin: .6rem 0 0; }
+.rule { width: 3rem; height: 1px; background: var(--ink); border: 0; margin: 2rem auto; opacity: .6; }
+.intro { font-family: var(--serif); font-size: 1.3rem; line-height: 1.6; text-align: center; margin: 0 auto; }
+.hint { text-align: center; font-size: .85rem; color: var(--ink-soft); margin: 1.5rem 0 0; }
+
+/* Location list */
+.places { list-style: none; margin: 2.5rem 0 0; padding: 0; border-top: 1px solid var(--rule); }
+.places li { border-bottom: 1px solid var(--rule); }
+.places a {
+  display: grid; grid-template-columns: 2.25rem 4.5rem 1fr auto; gap: 1rem; align-items: center;
+  padding: 1rem .25rem; color: var(--ink); text-decoration: none; min-height: 44px;
+}
+.places a:hover .place-name, .places a:focus-visible .place-name { color: var(--burgundy); }
+.place-num {
+  font-family: var(--sans); font-size: .8rem; font-weight: 500; color: var(--cream); background: var(--ink);
+  width: 1.75rem; height: 1.75rem; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
+}
+.place-thumb { width: 4.5rem; height: 4.5rem; object-fit: cover; background: var(--cream-deep); }
+.place-name { font-family: var(--serif); font-size: 1.3rem; line-height: 1.2; display: block; }
+.place-date { font-size: .8rem; color: var(--ink-soft); display: block; margin-top: .2rem; }
+.place-mark { color: var(--burgundy); font-size: .9rem; } /* subtle 'memory inside' indicator */
+
+/* Letter link + footer */
+.letter-link { text-align: center; margin: 3.5rem 0 0; }
+.letter-link a {
+  display: inline-flex; flex-direction: column; align-items: center; gap: .35rem; text-decoration: none;
+  color: var(--burgundy); padding: .75rem 1rem; min-height: 44px;
+}
+.letter-link svg { width: 22px; height: 22px; }
+.letter-link span { font-size: .75rem; letter-spacing: .18em; text-transform: uppercase; }
+.site-footer { text-align: center; padding-top: 3.5rem; padding-bottom: 3rem; }
+.site-footer p { font-family: var(--serif); font-style: italic; font-size: 1.1rem; color: var(--ink-soft); margin: 0; }
+
+/* Memory page */
+.memory-head { padding-top: 2.25rem; padding-bottom: 1.25rem; text-align: center; }
+.memory-head .place-num { margin-bottom: 1rem; }
+.memory-head h1 { font-size: clamp(2rem, 8vw, 3rem); margin: 0; font-weight: 400; }
+.memory-date { font-size: .8rem; letter-spacing: .18em; text-transform: uppercase; color: var(--ink-soft); margin: .9rem 0 0; }
+.memory-photo { margin: 1.5rem auto 0; max-width: 56rem; padding: 0 1rem; }
+.memory-photo img { width: 100%; background: var(--cream-deep); box-shadow: 0 1px 0 var(--rule); }
+.memory-body { padding-top: 2.5rem; padding-bottom: 1rem; }
+.memory-body p { margin: 0 0 1.2em; }
+.memory-body .story p:first-child::first-letter { font-family: var(--serif); font-size: 3.4em; float: left; line-height: .85; padding: .08em .1em 0 0; color: var(--burgundy); }
+.section { margin-top: 2.75rem; }
+.section h2 { font-size: 1.6rem; margin: 0 0 1rem; font-style: italic; color: var(--burgundy); font-weight: 500; }
+.section.love { border-left: 1px solid var(--burgundy); padding-left: 1.25rem; }
+.media { margin-top: 2.5rem; }
+.media audio, .media video { width: 100%; }
+.media figcaption { font-size: .8rem; color: var(--ink-soft); margin-top: .5rem; }
+
+.memory-nav { display: flex; justify-content: space-between; gap: 1rem; padding: 2.5rem 0 0; border-top: 1px solid var(--rule); margin-top: 3rem; font-size: .9rem; }
+.memory-nav a { text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; }
+.back { text-align: center; margin: 2.5rem 0 0; }
+.back a { font-size: .8rem; letter-spacing: .2em; text-transform: uppercase; text-decoration: none; padding: .75rem; display: inline-block; }
+
+/* Letter page */
+.letter { padding-top: 3.5rem; padding-bottom: 1rem; }
+.letter h1 { font-size: clamp(2rem, 8vw, 2.9rem); text-align: center; margin: 0 0 2.5rem; font-weight: 400; }
+.letter .body { font-family: var(--serif); font-size: 1.3rem; line-height: 1.65; }
+.letter .signature { font-family: var(--serif); font-style: italic; font-size: 1.4rem; margin-top: 2rem; }
+
+/* Cluster page */
+.cluster-list { list-style: none; padding: 0; margin: 2rem 0 0; }
+
+@media (min-width: 40rem) {
+  body { font-size: 1.125rem; }
+  .masthead { padding-top: 6rem; }
+  .memory-head { padding-top: 3.5rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in { animation: fade .9s ease-out both; }
+  @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+}
+@media print { .skip-link, .memory-nav, .back { display: none; } }
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Discreet list of map areas (one per NFC tag) on the homepage */
+.areas { margin: 2.5rem 0 0; text-align: center; font-size: .9rem; color: var(--muted, #6b6560); }
+.areas p { margin: 0 0 .4rem; letter-spacing: .08em; text-transform: uppercase; font-size: .72rem; }
+.areas ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: .35rem 1.1rem; }
+.areas a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--rule); }
+.areas a:hover, .areas a:focus-visible { color: var(--burgundy); }
+.cluster-heading { font-size: 1.35rem; font-style: italic; color: var(--burgundy); margin: 2.5rem 0 0; }
+.cluster-heading a { color: inherit; }

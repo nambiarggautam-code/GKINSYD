@@ -1,0 +1,27 @@
+<main id="main">
+  <header class="memory-head wrap fade-in">
+    <span class="place-num" aria-label="Place number ${number}">${number}</span>
+    <h1>${name}</h1>
+${date_block}
+  </header>
+  <figure class="memory-photo">
+    ${photo_tag}
+  </figure>
+  <article class="memory-body wrap">
+    <div class="story">
+${story}
+    </div>
+    <section class="section love" aria-labelledby="love-h">
+      <h2 id="love-h">What I love about you</h2>
+${love}
+    </section>
+${oneday_block}
+${media_block}
+    <nav class="memory-nav" aria-label="More memories">
+      ${prev_link}
+      ${next_link}
+    </nav>
+    <p class="back"><a href="../index.html">&larr; Back to our story</a></p>
+  </article>
+</main>
+<footer class="site-footer wrap"><p>${footer}</p></footer>

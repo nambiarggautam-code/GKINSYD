@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+<rect width="1600" height="1200" fill="#EDE5D7"/>
+<rect x="40" y="40" width="1520" height="1120" fill="none" stroke="#242424" stroke-opacity=".25" stroke-width="2"/>
+<path d="M320 744 C 560 624, 800 840, 1280 696" fill="none" stroke="#783D46" stroke-opacity=".5" stroke-width="3"/>
+<circle cx="800" cy="456" r="10" fill="#783D46"/>
+<text x="800" y="564" text-anchor="middle" font-family="Georgia, serif" font-size="73" fill="#242424">[REPLACE: photo]</text>
+<text x="800" y="664" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="40" fill="#4A4744">Replace with your own photo</text>
+</svg>
