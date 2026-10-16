@@ -1,20 +1,12 @@
-# Private originals (full-size photos) never go in the repo
+# PRIVATE: real memories, letter, photos and any plain builds. Never commit.
+private/
+
+# Private originals (full-size photos)
 originals/*
 !originals/README.txt
 
-# Map outputs: big renders are regenerated locally (make_map_a1.py); keep only small files
-map/output/*
-!map/output/a1/
-map/output/a1/*
-!map/output/a1/REPORT.md
-!map/output/a1/layout.json
-!map/output/a1/geocoded-places.json
-!map/output/a1/marker-positions-A1.csv
-!map/output/a1/tags-A1.csv
-!map/output/a1/back-template-A1-single.pdf
-!map/output/a1/back-template-A4-tiled.pdf
-!map/output/a1/nfc-tag-checklist-A4.pdf
-!map/output/a1/back-of-canvas-label.pdf
+# Map outputs (contain real place names and coordinates); regenerate locally
+map/output/
 
 # OSM data and caches
 *.osm.pbf
@@ -29,6 +21,8 @@ __pycache__/
 .venv*/
 venv/
 .cache/
+node_modules/
+.tools/
 
 # OS / editor
 .DS_Store

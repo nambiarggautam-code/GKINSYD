@@ -2,7 +2,7 @@
 
 *A tap-to-remember map of Sydney: a physical canvas plus a small private-ish website, one page per place.*
 
-Prepared 16 October 2026 for Gautam. Australian English. Everything marked **[REPLACE: …]** in the project is a placeholder for you to fill in. The three sample places are **fictional placeholders** that borrow public landmark names as examples only. No personal memories have been invented.
+Prepared 16 October 2026. Australian English. Everything marked **[REPLACE: …]** in the project is a placeholder for you to fill in. The three sample places are **fictional placeholders** that borrow public landmark names as examples only. No personal memories have been invented.
 
 > **What has and hasn't been done.** The website, generator, link checker and map script were built and run on a test machine (details in §13). Nothing has been deployed, bought, or tested with real NFC hardware. Those steps are yours, and this guide walks you through each one.
 

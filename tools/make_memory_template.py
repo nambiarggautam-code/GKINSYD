@@ -153,7 +153,7 @@ def page_break(doc):
 
 
 def main():
-    data = json.load(open(ROOT / "data" / "locations.json"))
+    data = json.load(open(ROOT / "private" / "locations.json" if (ROOT / "private" / "locations.json").exists() else ROOT / "data" / "locations.json"))
     locs = {l["slug"]: l for l in data["locations"]}
     cl = {c["slug"]: c for c in data["clusters"]}
     doc = Document()
@@ -297,7 +297,7 @@ def main():
     rule(doc)
     field_table(doc, [
         ("Her name or nickname", "as it should appear", "The name you call her.", 0.9),
-        ("How you sign off", "your name", "e.g. Gautam, or a name only she uses for you", 0.9),
+        ("How you sign off", "your name", "e.g. your first name, or a name only she uses for you", 0.9),
         ("Homepage introduction", "2\u20134 sentences", "A short welcome she reads first: when you arrived in Sydney, "
          "how it felt, and that every place on the map holds a memory of her.", 4.0),
         ("Line under the title", "optional", "Currently \u201cSince February 2026\u201d. Change it or leave as is.", 0.9),
