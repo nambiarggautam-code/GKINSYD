@@ -36,6 +36,7 @@ RED = "#B3261E"
 PAGE_W, PAGE_H, MARGIN = 841.0, 594.0, 30.0
 FRAME = (MARGIN, MARGIN, PAGE_W - 2 * MARGIN, PAGE_H - 2 * MARGIN)
 DOT_MM = 3.5
+MAP_MERGED = {"sydney-city"}   # clusters drawn as a single dot
 TAG_MM = 35.0
 
 # Extent (v2, "Just want this area"): Gautam's crop of the v1 preview, matched to
@@ -69,7 +70,10 @@ def load_points():
     mem = {m["slug"]: m for m in d["locations"]}
     pts = []
     clustered = set()
+    # Only the merged city dot is drawn as one dot; the NFC area clusters are NOT merged on the art.
     for c in d.get("clusters", []):
+        if c["slug"] not in MAP_MERGED:
+            continue
         ms = [mem[s] for s in c["members"]]
         X, Y = zip(*[to_m.transform(m["lon"], m["lat"]) for m in ms])
         pts.append({"slug": c["slug"], "name": c["name"], "kind": "cluster",

@@ -10,17 +10,17 @@ n,slug,name,kind,members,lat,lon,front_x_mm,front_y_mm,back_x_mm,back_y_mm,nfc_u
 9,myer-chatswood,Myer Chatswood,memory,,-33.797368,151.183274,617.2,256.4,223.8,256.4,memories/myer-chatswood.html
 10,manly,Manly,memory,,-33.797742,151.288940,671.5,255.7,169.5,255.7,memories/manly.html
 11,mitran-da-dhaba,Mitran Da Dhaba,memory,,-33.820223,151.009131,528.0,272.1,313.0,272.1,memories/mitran-da-dhaba.html
-12,tottenham-street-granville,"Tottenham Street, Granville",memory,,-33.825595,151.007026,527.0,275.4,314.0,275.4,memories/tottenham-street-granville.html
+12,tottenham-street-granville,Home,memory,,-33.825595,151.007026,527.0,275.4,314.0,275.4,memories/tottenham-street-granville.html
 13,tapari-momo-granville,Tapari Momo,memory,,-33.832397,151.013489,530.4,279.6,310.6,279.6,memories/tapari-momo-granville.html
 14,clarkes-point-reserve,Clarkes Point Reserve,memory,,-33.841766,151.172648,612.2,283.8,228.8,283.8,memories/clarkes-point-reserve.html
 15,taronga-zoo,Taronga Zoo,memory,,-33.843832,151.241375,647.5,284.5,193.5,284.5,memories/taronga-zoo.html
-16,dunbar-wreck-anchor,"Dunbar Wreck Anchor, The Gap",memory,,-33.843809,151.284945,669.9,284.1,171.1,284.1,memories/dunbar-wreck-anchor.html
+16,dunbar-wreck-anchor,Watsons Bay,memory,,-33.843809,151.284945,669.9,284.1,171.1,284.1,memories/dunbar-wreck-anchor.html
 17,bradleys-head,Bradleys Head,memory,,-33.851520,151.245973,650.0,289.2,191.0,289.2,memories/bradleys-head.html
 18,sydney-city,Sydney City,cluster,sydney-opera-house;sydney-harbour-bridge;luna-park-sydney;starlight-ember;sydney-observatory;sea-life-sydney-aquarium;darling-harbour-marina;civic-hotel;cotton-on-haymarket;st-marys-cathedral,-33.864606,151.207778,630.5,297.5,210.5,297.5,memories/sydney-city.html
 19,dudley-page-reserve,Dudley Page Reserve,memory,,-33.870003,151.280672,668.0,300.2,173.0,300.2,memories/dudley-page-reserve.html
 20,bondi-beach,Bondi Beach,memory,,-33.892313,151.275314,665.5,314.0,175.5,314.0,memories/bondi-beach.html
 21,o3-cafe-newtown,O3 Newtown,memory,,-33.892615,151.186533,619.9,315.0,221.1,315.0,memories/o3-cafe-newtown.html
-22,liberty-hall,Liberty Hall,memory,,-33.894356,151.224918,639.6,315.7,201.4,315.7,memories/liberty-hall.html
-23,unsw-square-house,UNSW Square House,memory,,-33.916357,151.226342,640.6,329.2,200.4,329.2,memories/unsw-square-house.html
+22,liberty-hall,"Liberty Hall, RITVIZ",memory,,-33.894356,151.224918,639.6,315.7,201.4,315.7,memories/liberty-hall.html
+23,unsw-square-house,UNSW Onam,memory,,-33.916357,151.226342,640.6,329.2,200.4,329.2,memories/unsw-square-house.html
 24,sydney-airport,Sydney Airport,memory,,-33.936500,151.166000,609.9,342.2,231.1,342.2,memories/sydney-airport.html
 25,figure-8-pools,Figure 8 Pools,memory,,-34.194560,151.038568,547.5,502.2,293.5,502.2,memories/figure-8-pools.html
