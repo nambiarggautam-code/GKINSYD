@@ -32,7 +32,7 @@ RED = "#B3261E"
 
 def load():
     lay = json.load(open(OUT / "layout.json"))
-    data = json.load(open(ROOT / "data" / "locations.json"))
+    data = json.load(open(ROOT / "private" / "locations.json" if (ROOT / "private" / "locations.json").exists() else ROOT / "data" / "locations.json"))
     dots = {p["slug"]: (p["x_mm"], p["y_mm"]) for p in lay["points"]}
     cl = {c["slug"]: c for c in data["clusters"]}
     city = set(cl["sydney-city"]["members"])

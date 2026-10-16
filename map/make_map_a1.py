@@ -39,10 +39,10 @@ DOT_MM = 3.5
 MAP_MERGED = {"sydney-city"}   # clusters drawn as a single dot
 TAG_MM = 35.0
 
-# Extent (v2, "Just want this area"): Gautam's crop of the v1 preview, matched to
+# Extent (v2, "Just want this area"): the client's crop of the v1 preview, matched to
 # the v1 layout using 4 dots (fit error < 0.2 mm). Crop in MGA56 metres:
 CROP = (226026.6, 6204652.6, 366737.7, 6298366.8)   # aspect 1.501
-# v3 (final): EXACTLY Gautam's crop. Keep its full width; the crop is slightly
+# v3 (final): EXACTLY the client's crop. Keep its full width; the crop is slightly
 # wider (1.501) than the frame (1.4625), so add the minimum height, split equally
 # top and bottom (+1.2 km each), to fit 781:534 without stretching or cutting
 # anything from his crop. Wollongong Central is outside and is not drawn.
@@ -66,7 +66,7 @@ def extent():
 
 
 def load_points():
-    d = json.load(open(ROOT / "data" / "locations.json"))
+    d = json.load(open(ROOT / "private" / "locations.json" if (ROOT / "private" / "locations.json").exists() else ROOT / "data" / "locations.json"))
     mem = {m["slug"]: m for m in d["locations"]}
     pts = []
     clustered = set()
