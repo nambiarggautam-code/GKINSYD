@@ -1,0 +1,4 @@
+# Asks well-behaved crawlers not to index this site.
+# This does NOT make the site private: anyone with a link can still open every page.
+User-agent: *
+Disallow: /
